@@ -5,8 +5,40 @@ public class Main {
 
     public static void main(String[] args) {
         runTestTwoSum();
+        runTwoAdd();
 
     }
+
+    private static void runTwoAdd() {
+        ListNode l1 = new ListNode(2);
+        ListNode n4 = new ListNode(4);
+        ListNode n3 = new ListNode(3);
+        l1.next = n4;
+        n4.next = n3;
+
+        ListNode l2 = new ListNode(5);
+        ListNode n6 = new ListNode(6);
+        ListNode n44 = new ListNode(4);
+        l2.next = n6;
+        n6.next = n44;
+
+
+
+    }
+
+    public static class ListNode {
+        int val;
+        ListNode next;
+        ListNode(int x) {
+            val = x;
+        }
+    }
+
+
+    public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+
+    }
+
 
     /**
      * Runs the two sum test.
